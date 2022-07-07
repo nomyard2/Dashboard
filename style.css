@@ -1,0 +1,153 @@
+body { overflow-x: hidden; }
+
+* {
+    margin: 0 ;
+    padding: 0;
+
+}
+
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color:rgb(39, 235, 82);
+}
+a:link{
+    color: white
+}
+
+ul, li, a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
+
+/*-------------------------------------------------------- */
+/* The menu selection on the sidebar*/
+
+.sidebar{
+    background-color: #111827;
+    display:grid;
+    gap: 40px;
+    color: white;
+    padding-right: 4em;
+    padding-left: 2em;
+    justify-content: left;
+
+}
+
+li{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.dash{
+    display: flex;
+    align-items: center;
+}
+
+/*-------------------------------------------------------- */
+/*The landing page configuration & header*/
+
+.landing{
+    display: grid;
+    grid-template-rows: 2fr 10fr;
+
+}
+
+.search{
+    width:88%;
+    height: 50%;
+    border-radius: 15px;
+    padding-left: 5px;
+    background-color: #e3e8f0;
+    border:none;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    padding-left: 3em;
+    gap:20px;
+    padding-bottom: 1em;
+   
+}
+
+.user{
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 4em;
+}
+
+.welcome-2{
+    display: flex;
+}
+
+.welcome-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    padding-right: 4em;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+/*-------------------------------------------------------- */
+/*Missions + Announcements + Trending*/
+
+.content{
+    display:grid;
+    grid-template-columns: 6fr 2fr;
+    background-color: #e2e8f0;
+
+}
+.project, .information{
+    margin: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95%;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    text-align: left;
+    padding: 10%;
+    border-radius: 6%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.other-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
